@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover line in css</title>
+</head>
+<style>
+    ul{
+        display: flex;
+        gap: 10px;
+
+    }
+    ul li{
+        list-style: none;
+        cursor: pointer;
+        position: relative;
+    }
+    li::after{
+        content:  "";
+        width: 0px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    li:hover::after{
+        width: 40px;
+        transition:width .3s linear;
+
+    }
+    /* span{
+        display: block;
+        width: 0px;
+        height: 2px;
+        background-color: black;
+    transition: width .3s linear;}
+
+        li:hover span{
+            width: 40px;
+
+        } */
+</style>
+<body>
+    <!-- <nav>
+        <ul>
+            <li>Home
+                <span></span></li>
+            <li>About
+                <span></span></li>
+            <li>Contact
+                <span></span></li>
+        </ul>
+    </nav> -->
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

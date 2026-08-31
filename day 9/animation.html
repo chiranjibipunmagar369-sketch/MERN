@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            
+            height: 100vbh;
+            border: 2px solid black;
+
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+                /* animation-name: slider;
+                animation-timing-function: ease-in-out;
+                animation-duration: 2s;
+            animation-iteration-count: infinite; 
+        /* animation-play-state: running;                  } */
+    /* animation-direction: alternate;
+animation-fill-mode: backwards; */ 
+                animation: slider 2s ease-in-out 1s fill-mode;
+
+}
+.hello{
+     height: 100px;
+            width: 100px;
+            background-color: green;
+}
+        @keyframes slider {
+            /* from{
+                transform: translateX();
+            } */
+            to{
+                /* transform: translateX(500px); */
+                transform: translateX(100vbh) rotate(350deg);
+            }
+        }
+        @keyframes hello {
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="hello"></div>
+    </div>
+</body>
+</html>

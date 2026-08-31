@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family:poppins ;
+    box-sizing: border-box;
 }
 header nav{
 display: flex;
@@ -94,20 +95,38 @@ article img{
     /* justify-content: center; */
     text-align: center;
     padding-top: 40px;
-
+ background-color: black;
+ opacity: 0.5;
 }
 footer .about{
-    background-image: url("1000_F_567561600_2io06hj2EOjdKdNijHJjuldOdE92YTIK.jpg");
+    /* background-color: black;
+    opacity: 0.5; */
+    background-image: url("alice-banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 footer .about button{
-    margin: 10px;
+    margin: 20px;
     width: 100px;
     height: 30px;
 }
+.section{
+    display: flex;
+}
+@media screen and (max-width:500px) {
+    .menu .menu-foods{
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+}
+@media  screen and (max-width:1150px) {
 
-
+    
+}
+.foods{
+    /* transform: rotate(75deg); */
+}
 
 
