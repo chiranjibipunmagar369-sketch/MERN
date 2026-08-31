@@ -7,7 +7,9 @@ header nav{
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 30px;}
+padding: 30px;
+border-bottom: 1px solid black;
+}
 
 nav button{
  background-color: bisque;
@@ -15,14 +17,97 @@ nav button{
  width: 90px;
  height: 30px;
 }
-
+main{
+    width: auto;
+    height: 600px;
+    /* border: 2px solid blue; */
+    background-image: url("variety-junk-food-products-on-the-top-view-background-photo.jpeg");
+    background-size: cover;
+    background-position: bottom right;
+}
 main .hero{
-    height: 90vbh;
+    height: 550px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
+    /* border: 2px solid black; */
 }
+.search-box{
+    display: flex;
+    width: 800px;
+    border: 2px solid black;
+    justify-self: start;
+}
+
+.search-box button{
+    width: 200px;
+    background-color: rgba(245, 217, 82, 0.842);
+}
+
 .hero input{
+    width: 600px;
     padding: 15px 10px;
 }
+
+article{
+    border-bottom:  1px solid rgba(65, 62, 62, 0);
+    width: 90%;
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 60px auto;
+    /* border: 2px solid black; */
+    padding-left: 100px;
+}
+article h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+article img{
+    width: 85%;
+    height: auto;
+    display: block;
+}
+.menu{
+    width: 90%;
+    /* border: 2px solid black; */
+    padding-left: 125px;
+}
+
+.menu .menu-foods{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 60px 50px;
+}
+.menu .menu-foods .foods img{
+    height: 150px;
+    object-fit: cover;
+}
+.about{
+    height: 300px;
+    margin-top: 20px;
+    border: 2px solid red;
+    color: aliceblue;
+    /* display: flex; */
+    /* justify-content: center; */
+    text-align: center;
+    padding-top: 40px;
+
+}
+footer .about{
+    background-image: url("1000_F_567561600_2io06hj2EOjdKdNijHJjuldOdE92YTIK.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer .about button{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+
