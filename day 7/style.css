@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:poppins ;
+}
+header nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;}
+
+nav button{
+ background-color: bisque;
+ border-radius: 5px;
+ width: 90px;
+ height: 30px;
+}
+
+main .hero{
+    height: 90vbh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.hero input{
+    padding: 15px 10px;
+}

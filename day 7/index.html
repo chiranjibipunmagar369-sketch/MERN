@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 100%;
+            border: 2px solid black;
+            display: grid;
+            gap: 10px;
+            grid-template-areas: "header header header"
+                                "nav nav nav"
+                                "section section aside"
+                                "article article aside"
+                                "footer footer footer"
+
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            color: red;
+        }
+        .box1{
+            background-color: red;
+            grid-area: header;
+        }
+        .box2{
+            background-color: red;
+            grid-area: nav;
+        }
+        .box3{
+            background-color: red;
+            grid-area: section;
+        }
+        .box4{
+            background-color: red;
+            grid-area: aside;
+        }
+        .box5{
+            background-color: red;
+            grid-area: article;
+        }
+        .box6{
+            background-color: red;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box1">header</div>
+        <div class="box2">nav</div>
+        <div class="box3">section</div>
+        <div class="box4">aside</div>
+        <div class="box5">article</div>
+        <div class="box6" >footer</div>
+    </div>
+    
+</body>
+</html>

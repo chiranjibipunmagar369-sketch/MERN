@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label{
+            font-size: 20px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit.html" method="post">
+        <div>
+
+            <label for="firstname"> First name:</label>
+            <input type="text" name="first" >
+        </div>
+        <div>
+        <label for="lastname">Lastname:</label>
+        <input type="text" name="lastname">
+        </div>
+        <div>
+            <label for="email"> Email:</label>
+            <input type="email" id="email">
+        </div>
+              <div>
+            <label for="password"> PASSWORD:</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+          <label for="male">MALE:</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">FEMALE:</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <div>
+            <label for="check">Checkbox</label>
+            apple
+            <input type="checkbox" name="" id="check">
+            orange
+            <input type="checkbox" name="" id="check">
+        </div>
+        <div>
+        <label for="country">country</label>
+        <select name="country" id="country">
+            <option value="not selected" >not selected</option>
+            <option value="nepal" >nepal</option>
+            <option value="selected" >india</option>
+        </select>
+        </div>
+        <div>
+            <label for="image">upload image:</label>
+            <input type="file" name="image" id="image">
+        </div>
+        <div><label for="range">range:</label>
+            <input type="range">
+        </div>
+        <div>
+            <label for="text">Text-area: </label>
+            <textarea name="text" id="text" rows="5" cols="5"></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+        
+        a<sup>2</sup>
+    </form>
+    
+
+</body>
+</html>
