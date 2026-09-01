@@ -7,6 +7,7 @@ renderCard()
 async function fetchData(){
     try {
         let res = await fetch('https://randomuser.me/api/?results=20')
+        // console.log(data1)
         let data1 = await res.json()
         data = data1.results
 
